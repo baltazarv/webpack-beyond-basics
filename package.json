@@ -4,14 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-		"web-dev": "webpack --config=config/webpack.dev.js",
-		"web-server": "webpack-dev-server --config=config/webpack.dev.js",
+    "web-dev": "webpack --config=config/webpack.dev.js",
+    "web-server": "webpack-dev-server --config=config/webpack.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.8",
     "webpack-dev-server": "^3.8.0"
