@@ -8,6 +8,8 @@ Installs websocket file that webpack-dev-server uses to establish hot reloading,
 
 ## CSS Loaders
 Have CSS linting by default.
+1. `style-loader`: inject CSS into the DOM.
+1. `css-loader`: interprets @import and url() like import/require() and will resolve them.
 
 ## HTML Loaders
 1. `html-loader`: does the linting...

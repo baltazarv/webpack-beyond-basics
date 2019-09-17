@@ -1,4 +1,3 @@
-
 const path = require('path')
 
 module.exports = {
@@ -41,7 +40,21 @@ module.exports = {
 						loader: 'extract-loader'
 					},
 					{
-						loader: 'html-loader'
+						loader: 'html-loader',
+						options: {
+							attrs: ['img:src']
+						}
+					}
+				]
+			},
+			{
+				test: /\.(png|jpg|jpeg|gif)$/,
+				use: [
+					{
+						loader: 'file-loader',
+						options: {
+							name: 'images/[name].[ext]'
+						}
 					}
 				]
 			}
