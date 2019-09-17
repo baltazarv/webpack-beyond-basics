@@ -1,10 +1,10 @@
 # code from course
 Lawrence Whiteside
 https://www.udemy.com/course/webpack-beyond-the-basics/learn/
-GitHub: https://github.com/lawwantsin/webpack-course-v3
+GitHub: https://github.com/lawwantsin/webpack-course
 
 ## webpack-dev-server
-Installs websocket file that webpack-dev-server uses to establish hot reloading, making the bundle file very large in dev mode.
+* Installs websocket file that webpack-dev-server uses to establish hot reloading, making the bundle file very large in dev mode.
 
 ## CSS Loaders
 Have CSS linting by default.
@@ -17,3 +17,6 @@ Have CSS linting by default.
 1. `file-loader`: tells webpack the name of the file that you want to create
 
 On web-dev-server HTML file does not get written. It gets served in memory.
+
+## babel presets
+compatible table: http://kangax.github.io/compat-table/es6/
