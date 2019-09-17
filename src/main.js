@@ -1,5 +1,5 @@
 require('babel-runtime/regenerator')
 require('webpack-hot-middleware/client?reload=true')
 require('./main.css')
-require('./images/river-phoenix.jpg')
 require('./index.html')
+// debugger
