@@ -28,3 +28,11 @@ Have CSS linting by default.
 
 ## babel presets
 compatible table: http://kangax.github.io/compat-table/es6/
+
+## babel-register
+Used on server and client-side to get ES6 imports working.
+
+## React
+
+### react-hot-loader
+Keep state when hot reload happens
