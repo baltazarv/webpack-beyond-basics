@@ -14,10 +14,11 @@ GitHub: https://github.com/lawwantsin/webpack-course
 ### nodemon
 To use nodemon must install globally first, `npm i -g nodemon`
 
-## CSS Loaders
-Have CSS linting by default.
-1. `style-loader`: inject CSS into the DOM.
-1. `css-loader`: interprets @import and url() like import/require() and will resolve them.
+## babel presets
+compatible table: http://kangax.github.io/compat-table/es6/
+
+## Preprocessors
+The compilers for preprocessors like EJS, Pug, Handlebars, and Sass are runtime watchers with hot browser reloading extension.
 
 ## HTML Loaders
 1. `html-loader`: does the linting...
@@ -25,12 +26,13 @@ Have CSS linting by default.
 1. `file-loader`: tells webpack the name of the file that you want to create
 1. But webpack plugin `html-webpack-plugin` replaces `extract-loader` and `file-loader`!
 
-## HTML preprocessors
-The compilers for HTML preprocessors like EJS, Pug, and Handlebars are runtime watchers with hot browser reloading extension.
-
-### EJS
+### HTML preprocessors
 Webpack `HTMLWebpackPlugin` uses EJS as a default.
 
+### CSS Loaders
+Have CSS linting by default.
+1. `style-loader`: inject CSS into the DOM.
+1. `css-loader`: interprets @import and url() like import/require() and will resolve them.
 
-## babel presets
-compatible table: http://kangax.github.io/compat-table/es6/
+### CSS preprocessors
+`node-sass` and `sass-loader`
