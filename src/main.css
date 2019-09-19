@@ -5,6 +5,7 @@ body {
 
 .profile {
 	display: flex;
+	-ms-align-items: center;
 	align-items: center;
 	justify-content: center;
 	height: 100vh;
@@ -20,6 +21,12 @@ img {
 }
 
 .h1 {
-	font-size: 5em;
+	font-size: 3em;
 	text-shadow: 0 0 20px black;
+	margin: 0;
 }
+
+/* .counter {
+	font-size: 2em;
+	color: salmon;
+} */
