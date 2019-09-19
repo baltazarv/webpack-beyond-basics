@@ -25,6 +25,12 @@ Have CSS linting by default.
 1. `file-loader`: tells webpack the name of the file that you want to create
 1. But webpack plugin `html-webpack-plugin` replaces `extract-loader` and `file-loader`!
 
+## HTML preprocessors
+The compilers for HTML preprocessors like EJS, Pug, and Handlebars are runtime watchers with hot browser reloading extension.
+
+### EJS
+Webpack `HTMLWebpackPlugin` uses EJS as a default.
+
 
 ## babel presets
 compatible table: http://kangax.github.io/compat-table/es6/

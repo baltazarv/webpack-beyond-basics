@@ -55,12 +55,31 @@ module.exports = {
 				]
 			},
 			{
+				test: /\.pug$/,
+				use: [
+					{
+						loader: 'pug-loader'
+					}
+				]
+			},
+			{
+				test: /\.hbs$/,
+				use: [
+					{
+						loader: 'handlebars-loader',
+						query: {
+							inlineRequires: '/images/'
+						}
+					}
+				]
+			},
+			{
 				test: /\.(png|jpg|jpeg|gif)$/,
 				use: [
 					{
 						loader: 'file-loader',
 						options: {
-							name: 'images/[name].[ext]'
+							name: 'images/[name]-[hash:8].[ext]'
 						}
 					}
 				]
@@ -70,7 +89,8 @@ module.exports = {
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
 		new HTMLWebpackPlugin({
-			template: './src/index.html'
+			template: './src/index.hbs',
+			title: 'RIVER'
 		})
 	]
 }
